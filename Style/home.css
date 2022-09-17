@@ -1,0 +1,30 @@
+section.body-content {
+margin-top: 75px;
+margin-left: 20px;
+float: left;
+}
+
+.iconbox-content {
+float: left;
+width: 252px;
+margin-left: 10px;
+margin-right: 27px;
+margin-top: 5px;
+height: 160px;
+overflow: hidden;
+padding-bottom: 40px;
+}
+
+#wrapper #home-boxes p {
+width: 100%;
+font-size: 12px;
+line-height: 1.6em;
+padding: 0 0 0.5em;
+color: #777777;
+}
+
+.box-icon {
+float: left;
+width: 32px;
+}
+

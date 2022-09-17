@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="Style/style.css"/>
+        <!--style>
+        *{margin: 0; padding: 0; font-size: 16px;}
+        .logo {
+        background: #abc;
+        width: 100px;
+        height: 90px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        position: absolute;
+        border-radius: 5px;
+        }
+        header {
+        max-width: 100%;
+        max-height: 200px;
+        background: #B9F;
+        }
+        nav {
+            text-align: center;
+            max-width: 45%;
+            height: 125px;
+            margin-left: 165px;
+            font-weight: bolder;
+        }
+        ul {
+        list-style: none;
+        margin-left: 0;
+        position: absolute;
+        margin-top: 85px;
+        overflow: hidden;
+
+        }
+        li.active {
+        float: left;
+        }
+        ul li a {
+        display: block;
+        text-decoration: none;
+        border-right-style: outset;
+        font-size: 16px;
+        color: #ffb;
+        background: grey;
+        padding: 10px 30px;
+        width: 90px;
+        }
+
+        ul li a:hover{
+        display: block;
+        text-decoration: none;
+        border-right-style: outset;
+        font-size: 16px;
+        color: #5a5;
+        background: white;
+        padding: 10px 30px;
+        width: 90px;
+        transition:0.7s;
+        }
+        .search-div {
+        float: right;
+        margin-right: 1%;
+        margin-top: -110px;
+        }
+
+        input[type="text"] {
+            width: 210px;
+            height: 37px;
+            font-size: 20px;
+            font-weight: lighter;
+            color: #395;
+            padding-left: 5px;
+            padding-right: 2px;
+            float: left;
+        }
+
+        input[type="submit"] {
+        background: #2af;
+        color: #FFD;
+        font-size: 14px;
+        width: 70px;
+        height: 40px;
+        border: 0px;
+        }
+
+        .banner {
+        width: 100%;
+        height: 250px;
+        background: beige;
+        }
+
+        section.mid-col {
+        float: right;
+        width: 75%;
+        height: 250px;
+        background: aqua;
+        margin-right: 15%;
+        }
+
+        aside.left-bar {
+        width: 135px;
+        height: 250px;
+        background: aquamarine;
+        margin-left: 0px;
+        }
+
+        .right-side-col {
+        background: bisque;
+        height: 250px;
+        float: right;
+        width: 15%;
+        margin-top: -250px;
+        }
+
+        footer {
+        width: 100%;
+        height: 90px;
+        background: cadetblue;
+        }
+        </style-->
+        <title>Shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="wrapper">
+        
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img class="image-logo" src="images/logo.gif" alt="logo"></a>
+                </div>
+
+                <nav>
+                    <img class="Lesile-banner" src="images/leslie-banner-2.png" alt="Lesile-Banner">
+                    <ul>
+                        <li class="page"><a accesskey="1" href="index.html">Home</a></li>
+                        <li class="page"><a href="AboutMe.html" accesskey="a">About Me</a></li>
+                        <li class="page"><a href="workshop.html" accesskey="w">Workshop</a></li>
+                        <li class="page"><a href="gallery.html" accesskey="g">Gallery</a></li>
+                        <li class="page"><a href="contacts.html" accesskey="c">Contact</a></li>
+                        <li class="page"><a class="active" href="Shop.html" accesskey="o">Shop</a></li>
+                        <li class="page"><a href="AccessKeys.html" accesskey="k">Access Keys</a></li>
+                    </ul>
+                </nav>
+                <div class="search-div">
+                    <form name="search">
+                        <input type="text"/>
+                        <input type="submit" value="Search"/>
+                    </form>
+                </div>
+            </header>
+            
+
+            <div class="banner">
+                <img class="banner-image" src="images/banner.png" alt="banner">
+            </div>
+            
+
+            <section class="mid-col">
+                <section class="form-section">
+                  <fieldset class="contact_form">
+                    <legend>Purchase Order</legend>
+                <div class="required_text">* Required information</div><table summary="This table structure for purchase">
+                    <caption>If you want to get any item of your own ideas you can do so by filling in the simple form below:</caption>
+                    <thead>
+                        <tr title="Purchase Product">
+                            <th>Purchase Product</th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr title="Thanks">
+                            <td>Thank you for filling up the form</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr title="Item-Choice">
+                            <td><label for="Item_Choice">Choose an item:</label></td>
+                            <td>
+                                <select id="item_list" accesskey="" required="required" autofocus>
+                                    <option value="gates">Gates</option>
+                                    <option value="stair_rails">Stair Rails</option>
+                                    <option value="door_handles">Door Handles</option>
+                                    <option value="door_security">Door Security</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="required">*</span>
+                            </td>
+                        </tr>
+                        <tr title="work-type">
+                            <td><label for="work_type">Work Type</label></td>
+                            <td>
+                               <input type="radio" required name="work_type" value="new"><label>New</label>
+								<input type="radio" required name="work_type" value="Repair"><label>Repair</label><span class="required">*</span>
+                            </td>
+                        </tr>
+                        <tr title="Element">
+                            <td><label for="element">Elements</label></td>
+                            <td>
+                               	<input id="iron" type="checkbox" name="iron" value="iron" checked="checked"><label for="iron">Iron</label><span class="required">*</span><br>
+								<input id="aluminium" type="checkbox" name="aluminium" value="aluminium"><label for="aluminium">Aluminium</label><br>
+								<input id="copper" type="checkbox" name="carbon" value="carbon"><label for="carbon">Carbon</label><br>                              <input id="cobalt" type="checkbox" name="cobalt" value="cobalt"><label for="cobalt">Cobalt</label><br>
+								<input id="zinc" type="checkbox" name="zinc" value="zinc"><label for="zinc">Zinc</label><br>
+								
+                            </td>
+                        </tr>
+                        <tr title="number_item">
+                            <td><label for="number_item">Number of iteam:</label></td>
+                            <td><input placeholder="0" required type="number" value="0" id="number_item" name="number_item" min="1" max="50"><span class="required">*</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="delivery_date">Choose delivery date:</label></td>
+                            <td><input id="delivery_date" type="date"></td>
+                        </tr>
+                        <tr title="Design">
+                            <td><label for="Design">Design</label></td>
+								<td>
+								    <input placeholder="Upload your image" type="file" accept="image/jpeg" id="design" name="design" width="50px" height="10px">
+								    
+				                </td>
+                        </tr>
+                        <tr title="details">
+                            <td><label for="details">Details:</label></td>
+                            <td>
+                            <textarea placeholder="Please write your ideas about your product" id="message" type="text" size="50px" tab-index="4" name="message" cols="42" rows="6"></textarea>
+                            </td>
+                        </tr>           
+                    </tbody>
+                </table>
+                </fieldset>
+            </section>
+            </section>
+
+            
+            <aside class="left-bar">
+               <div class="access-key-description-div">
+                   <p class="access-key-description">
+                       Easy access keys are enabled for you to nevigate i out site.</p>
+                       <div class="list-of-browser-div">
+                   <ul class="Accesskey-browser-list">
+                        <li>For Internet Explorer: [alt] + <i>[Accesskey]</i></li>
+                        <li>For Chrome: [alt] + <i>[Accesskey]</i></li>
+                        <li>For Firefox: [alt] + [Shift] + <i>[Accesskey]</i></li>
+                        <li>For Safari: [alt] + <i>[Accesskey]</i></li>
+                        <li>For Opera: [alt] + <i>[Accesskey] (Newer)</i></li>
+                    </ul></div>
+                       <p class="access-key-description2">
+                       Access Keys: 1=Home, A=About Me, W=Workshop, G=Gallery, C=Contacts, J=Join Us, O=Shop, K=Access Keys.
+                       <br /><br />
+                       Here we have described Access keys for only windows.<br /><br />
+                       For other OS, Please <a href="AccessKeys.html">Click</a> this link.
+                       
+                   </p>
+               </div>
+            </aside>
+                        
+            
+            <div class="section">
+            
+            </div>
+            
+            
+            <footer>
+                <div class="section">
+                
+                </div>
+
+                <div class="section">
+                
+                </div>
+
+                <div class="section">
+                
+                </div>
+
+            </footer>
+        </div>
+
+
+    </body>
+</html>

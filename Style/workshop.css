@@ -1,0 +1,60 @@
+section.mid-col {
+float: left;
+width: 85%;
+height: 3170px;
+margin-left: 15%;
+}
+
+aside.left-bar {
+width: 15%;
+margin-left: 0px;
+display: block;
+margin-top: 0px;
+height: 3170px;
+position: absolute;
+float: left;
+}
+
+h1 {
+font-size: 26px;
+color: gold;
+}
+
+section#inner-gallery-section {
+margin-left: 40px;
+margin-top: 30px;
+max-height: 710px;
+height: 70%;
+}
+
+section.used-tools {
+margin-left: 30px;
+margin-top: 265px;
+}
+
+.placeholder {
+float: left;
+margin-left: 20px;
+margin-top: 20px;
+max-width: 25%;
+max-height: 100%;
+}
+
+.placeholder>img {
+width: 240px;
+height: 200px;
+max-width: 100%;
+}
+
+.placeholder-tools>img {
+width: 92%;
+height: 350px;
+padding-left: 20px;
+margin-top: 10px;
+}
+
+footer {
+width: 100%;
+height: 90px;
+margin-top: 3170px;
+}
